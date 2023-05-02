@@ -8,5 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="lavender">#A06AB4</color>
+    <color name="navblue">#001E36
+    </color>
+    <color name="skyblue">#5C82FF
+    </color>
 
 </resources>

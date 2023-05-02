@@ -20,7 +20,7 @@
         android:fontFamily="@font/poppins"
         android:text="Photo Editor Pro"
         android:textSize="25dp"
-        android:textColor="@color/lavender"
+        android:textColor="@color/navblue"
         android:textStyle="bold"/>
 
   </LinearLayout>

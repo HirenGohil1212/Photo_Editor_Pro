@@ -12,6 +12,6 @@
         android:text="Account"
         android:textSize="30dp"
         android:gravity="center"
-        android:textColor="@color/lavender"/>
+        android:textColor="@color/navblue"/>
 
 </FrameLayout>
