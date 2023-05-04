@@ -20,6 +20,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -46,7 +47,7 @@ private MaterialButton mybtn;
 private FirebaseAuth auth;
 GoogleSignInClient mGoogleSignInClient;
 
-ProgressDialog progressDialog;
+ProgressBar progressBar;
 ImageView imageView;
 
     @Override
@@ -54,9 +55,7 @@ ImageView imageView;
         super.onCreate(savedInstanceState);
 
         auth = FirebaseAuth.getInstance();
-        progressDialog = new ProgressDialog(getActivity());
-        progressDialog.setTitle("Creating Account");
-        progressDialog.setMessage("We are creating your account");
+
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestIdToken(getString(R.string.default_web_client_id)).requestEmail().build();
         mGoogleSignInClient = GoogleSignIn.getClient(requireActivity(),gso);
@@ -84,6 +83,7 @@ ImageView imageView;
 
     private void signIn(){
         Intent intent = mGoogleSignInClient.getSignInIntent();
+
         startActivityForResult(intent,RC_SIGN_IN);
     }
 
@@ -97,8 +97,14 @@ ImageView imageView;
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+
+                            // show the progress bar
                             Toast.makeText(getActivity(), "SignUp Successful", Toast.LENGTH_SHORT).show();
+
+
                             startActivity(new Intent(getActivity(), MainActivity.class));
+                            getActivity().onBackPressed();
+
                         } else {
                             Toast.makeText(getActivity(), "SignUp Failed" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
@@ -114,6 +120,7 @@ ImageView imageView;
         View view = inflater.inflate(R.layout.fragment_account, container, false);
         mybtn = view.findViewById(R.id.button);
         imageView = view.findViewById(R.id.google_logo);
+        progressBar = view.findViewById(R.id.progressBar);
 
         mybtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,6 +136,12 @@ ImageView imageView;
             public void onClick(View v) {
                 //Toast.makeText(requireActivity(), "Hello", Toast.LENGTH_SHORT).show();
                 signIn();
+
+
+// Your login process code here
+
+                progressBar.setVisibility(View.GONE); // hide the progress bar
+
 
             }
         });
