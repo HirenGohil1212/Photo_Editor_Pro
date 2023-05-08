@@ -14,15 +14,16 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        if(position == 0){
+        if (position == 0) {
             return new Inspiring_Fragment();
+
         } else if (position == 1) {
             return new GenerateAI_Fragment();
         } else if (position == 2) {
             return new EditByMaster_Fragment();
         } else if (position == 3) {
             return new PopularStickers_Fragment();
-        }else {
+        } else {
             return new TrendingReplays_Fragment();
         }
 

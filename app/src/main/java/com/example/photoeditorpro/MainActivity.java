@@ -71,10 +71,10 @@ public class MainActivity extends AppCompatActivity {
 
             switch (item.getItemId()) {
                 case R.id.home:
-
                     replaceFragment(new Inspiring_Fragment());
                     tabLayout.setVisibility(View.VISIBLE);
                     break;
+
                 case R.id.explore:
                     replaceFragment(new ExploreFragment());
                     tabLayout.setVisibility(View.GONE);

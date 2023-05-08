@@ -1,11 +1,237 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ExploreFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/mySlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/holi" />
+
+    <GridLayout
+        android:id="@+id/contentType"
+        android:layout_below="@id/mySlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_1"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="30dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/g1"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Background"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="20dp"
+                />
 
 
-</FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="30dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/g1"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Background"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="20dp"
+                />
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_3"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="30dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/g1"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Background"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="20dp"
+                />
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_4"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="30dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/g1"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Background"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="20dp"
+                />
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_5"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="30dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/g1"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Background"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="20dp"
+                />
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_6"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="30dp"
+            android:layout_margin="8dp">
+
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/g1"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Background"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="20dp"
+                />
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_7"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="30dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/g1"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Background"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="20dp"
+                />
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contentType"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/poppins"
+        android:text="Top Popular Categories"
+        android:textColor="@color/navblue"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/line_2"
+        android:layout_below="@id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Social Media Contact"
+        android:fontFamily="@font/poppins"
+        android:layout_margin="10dp"
+        android:textColor="@color/navblue"
+        android:textStyle="bold"
+        />
+
+
+
+</RelativeLayout>
