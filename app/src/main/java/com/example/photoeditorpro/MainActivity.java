@@ -23,16 +23,20 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
 
     FloatingActionButton fab;
     BottomNavigationView bottomNavigationView;
     ImageView cancelBtn;
+    TabLayout tabLayout;
+    ViewPager viewPager;
 
 
     Toolbar toolbar;
@@ -41,8 +45,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        toolbar = findViewById(R.id.toolbar);
+        tabLayout = findViewById(R.id.tab);
+        viewPager = findViewById(R.id.viewPager);
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
 
+        tabLayout.setupWithViewPager(viewPager);
+
+
+        toolbar = findViewById(R.id.toolbar);
         //Step-1
        setSupportActionBar(toolbar);
 
@@ -54,22 +65,27 @@ public class MainActivity extends AppCompatActivity {
         fab = findViewById(R.id.fab);
 
 
-        replaceFragment(new HomeFragment());
+       // replaceFragment(new Inspiring_Fragment());
         bottomNavigationView.setBackground(null);
         bottomNavigationView.setOnItemSelectedListener(item -> {
 
             switch (item.getItemId()) {
                 case R.id.home:
-                    replaceFragment(new HomeFragment());
+
+                    replaceFragment(new Inspiring_Fragment());
+                    tabLayout.setVisibility(View.VISIBLE);
                     break;
                 case R.id.explore:
                     replaceFragment(new ExploreFragment());
+                    tabLayout.setVisibility(View.GONE);
                     break;
                 case R.id.trophy:
                     replaceFragment(new TrophyFragment());
+                    tabLayout.setVisibility(View.GONE);
                     break;
                 case R.id.account:
                     replaceFragment(new AccountFragment());
+                    tabLayout.setVisibility(View.GONE);
                     break;
             }
 
@@ -151,6 +167,5 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-   
 }
 
