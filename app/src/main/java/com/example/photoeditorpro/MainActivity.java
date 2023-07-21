@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         fab = findViewById(R.id.fab);
 
 
-       // replaceFragment(new Inspiring_Fragment());
+//       replaceFragment(new Inspiring_Fragment());
         bottomNavigationView.setBackground(null);
         bottomNavigationView.setOnItemSelectedListener(item -> {
 
@@ -74,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
                     replaceFragment(new Inspiring_Fragment());
                     tabLayout.setVisibility(View.VISIBLE);
                     break;
-
                 case R.id.explore:
                     replaceFragment(new ExploreFragment());
                     tabLayout.setVisibility(View.GONE);

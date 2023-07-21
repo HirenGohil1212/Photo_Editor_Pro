@@ -64,7 +64,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Background"
+                android:text="Templates"
                 android:textAlignment="center"
                 android:fontFamily="@font/poppins"
                 android:layout_marginTop="20dp"
@@ -90,7 +90,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Background"
+                android:text="Stickers"
                 android:textAlignment="center"
                 android:fontFamily="@font/poppins"
                 android:layout_marginTop="20dp"
@@ -116,7 +116,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Background"
+                android:text="Replays"
                 android:textAlignment="center"
                 android:fontFamily="@font/poppins"
                 android:layout_marginTop="20dp"
@@ -142,15 +142,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Background"
+                android:text="Images"
                 android:textAlignment="center"
                 android:fontFamily="@font/poppins"
                 android:layout_marginTop="20dp"
                 />
 
-
-
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardview_6"
             android:layout_width="100dp"
@@ -169,13 +168,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Background"
+                android:text="Creators"
                 android:textAlignment="center"
                 android:fontFamily="@font/poppins"
                 android:layout_marginTop="20dp"
                 />
-
-
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -195,7 +192,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Background"
+                android:text="Hashtags"
                 android:textAlignment="center"
                 android:fontFamily="@font/poppins"
                 android:layout_marginTop="20dp"
@@ -204,7 +201,6 @@
 
 
         </androidx.cardview.widget.CardView>
-
 
     </GridLayout>
 
@@ -225,15 +221,108 @@
 
     <TextView
         android:id="@+id/line_2"
-        android:layout_below="@id/line_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Social Media Contact"
+        android:layout_below="@id/line_1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:fontFamily="@font/poppins"
-        android:layout_margin="10dp"
+        android:text="Social Media Contact"
         android:textColor="@color/navblue"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/smeadia_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+    >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/insta_page">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/youtube_page">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/twitter_page">
+
+        </ImageView>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/line_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/smeadia_layout"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins"
+        android:text="Social Media Contact"
+        android:textColor="@color/navblue"
+        android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/smeadia_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_3"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/ad_1">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/ad_2">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/ad_3">
+
+            </ImageView>
+
+        </LinearLayout>
 
 
 

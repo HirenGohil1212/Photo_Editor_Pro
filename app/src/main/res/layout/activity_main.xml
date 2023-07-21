@@ -30,7 +30,6 @@
         android:background="@color/navblue"
         app:tabMode="scrollable"
         app:tabTextColor="@color/white"
-
         app:tabIndicatorColor="@color/white"/>
 
     <androidx.viewpager.widget.ViewPager

@@ -28,6 +28,10 @@ public class TrendingReplays_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_trending_replays_, container, false);
+
+        View view = inflater.inflate(R.layout.fragment_trending_replays_, container, false);
+
+        return view;
+        //return inflater.inflate(R.layout.fragment_trending_replays_, container, false);
     }
 }
