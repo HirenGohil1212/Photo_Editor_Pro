@@ -1,19 +1,19 @@
 package com.example.photoeditorpro;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentActivity;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-public class ViewPagerAdapter extends FragmentPagerAdapter {
+public class ViewPagerAdapter extends FragmentStateAdapter {
 
-     public ViewPagerAdapter(@NonNull FragmentManager fm) {
-        super(fm);
+    public ViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
+        super(fragmentActivity);
     }
 
+    @NonNull
     @Override
-    public Fragment getItem(int position) {
+    public Fragment createFragment(int position) {
         if (position == 0) {
             return new Inspiring_Fragment();
         } else if (position == 1) {
@@ -25,27 +25,10 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         } else {
             return new TrendingReplays_Fragment();
         }
-
     }
 
     @Override
-    public int getCount() {
+    public int getItemCount() {
         return 5;
-    }
-
-    @Nullable
-    @Override
-    public CharSequence getPageTitle(int position) {
-        if(position == 0){
-            return "Inspiring";
-        } else if (position == 1) {
-            return "Generated With AI";
-        } else if (position == 2) {
-            return "Edit By Masters";
-        } else if (position == 3) {
-            return "Popular Stickers";
-        }else {
-            return  "Trending Replays";
-        }
     }
 }

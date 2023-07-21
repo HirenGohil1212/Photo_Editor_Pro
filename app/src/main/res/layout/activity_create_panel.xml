@@ -7,6 +7,7 @@
     tools:context=".Create_Panel">
 
     <TextView
+        android:id="@+id/line_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="What would you like to \ncreate?"
@@ -14,9 +15,94 @@
         android:textStyle="bold"
         android:fontFamily="@font/poppins"
         android:layout_marginTop="50dp"
-        >
+        android:textSize="30dp"
+        android:textColor="@color/navblue"
 
+        >
     </TextView>
+
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:layout_below="@id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/rec_1"
+            android:layout_margin="12dp"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/rec_2"
+            android:layout_margin="12dp">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/rec_3">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_2"
+        android:layout_below="@id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/rec_4"
+            android:layout_margin="12dp"
+            >
+        </ImageView>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/rec_5"
+            android:layout_margin="12dp">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/rec_6">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+
+
 
 
 </RelativeLayout>

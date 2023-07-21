@@ -17,8 +17,8 @@
         android:title=""/>
 
     <item
-        android:id="@+id/trophy"
-        android:title="Trophy"
+        android:id="@+id/discover"
+        android:title="Discover"
         android:icon="@drawable/trophy" />
     <item
         android:id="@+id/account"
