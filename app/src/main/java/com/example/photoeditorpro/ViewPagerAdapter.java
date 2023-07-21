@@ -16,7 +16,6 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         if (position == 0) {
             return new Inspiring_Fragment();
-
         } else if (position == 1) {
             return new GenerateAI_Fragment();
         } else if (position == 2) {
