@@ -82,8 +82,9 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/rec_5"
-            android:layout_margin="12dp">
+            android:layout_margin="12dp"
+            android:src="@drawable/rec_5">
+
         </ImageView>
 
         <ImageView
