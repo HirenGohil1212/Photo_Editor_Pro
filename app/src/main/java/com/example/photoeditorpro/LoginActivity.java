@@ -37,8 +37,7 @@ public class LoginActivity extends AppCompatActivity {
     FirebaseAuth auth;
     TextView forgotPassword;
 
-
-
+//NOTE : Google Sign Redirect To Main Activity.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

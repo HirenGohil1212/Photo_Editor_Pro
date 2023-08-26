@@ -10,7 +10,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 public class ViewPagerAdapter extends FragmentStateAdapter {
 
-    private String[] titles = {"Inspiring","Generated","Features"};
+    private String[] titles = {"Inspiring","Generated With AI","Edit By Masters","Popular Stickers","Trending Replays"};
     public ViewPagerAdapter(@NonNull HomeFragment fragmentActivity) {
         super(fragmentActivity);
     }
@@ -28,6 +28,10 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
             case 1:
                 return new GenerateAI_Fragment();
             case 2:
+                return new EditByMaster_Fragment();
+            case 3:
+                return new PopularStickers_Fragment();
+            case 4:
                 return new TrendingReplays_Fragment();
         }
         return new Inspiring_Fragment();
