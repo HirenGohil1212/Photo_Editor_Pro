@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -108,49 +109,52 @@ public class MainActivity extends AppCompatActivity {
 
     private void showBottomDialog() {
 
-        final Dialog dialog = new Dialog(this);
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.bottomstylesheet);
+        Intent i = new Intent(MainActivity.this, Edit_Panel.class);
+        startActivity(i);
 
-        LinearLayout takephoto = dialog.findViewById(R.id.takephoto);
-        LinearLayout import_gal = dialog.findViewById(R.id.import_gal);
-
-        ImageView cancelButton = dialog.findViewById(R.id.cancelButton);
-
-        takephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                dialog.dismiss();
-                Toast.makeText(MainActivity.this,"Take Photo is clicked",Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
-        import_gal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                dialog.dismiss();
-                Toast.makeText(MainActivity.this,"Import Gallery is Clicked",Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
-
-
-        cancelButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                dialog.dismiss();
-            }
-        });
-
-        dialog.show();
-        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
-        dialog.getWindow().setGravity(Gravity.BOTTOM);
+//        final Dialog dialog = new Dialog(this);
+//        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        dialog.setContentView(R.layout.bottomstylesheet);
+//
+//        LinearLayout takephoto = dialog.findViewById(R.id.takephoto);
+//        LinearLayout import_gal = dialog.findViewById(R.id.import_gal);
+//
+//        ImageView cancelButton = dialog.findViewById(R.id.cancelButton);
+//
+//        takephoto.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                dialog.dismiss();
+//                Toast.makeText(MainActivity.this,"Take Photo is clicked",Toast.LENGTH_SHORT).show();
+//
+//            }
+//        });
+//
+//        import_gal.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                dialog.dismiss();
+//                Toast.makeText(MainActivity.this,"Import Gallery is Clicked",Toast.LENGTH_SHORT).show();
+//
+//            }
+//        });
+//
+//
+//
+//        cancelButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                dialog.dismiss();
+//            }
+//        });
+//
+//        dialog.show();
+//        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+//        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+//        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
+//        dialog.getWindow().setGravity(Gravity.BOTTOM);
 
     }
 

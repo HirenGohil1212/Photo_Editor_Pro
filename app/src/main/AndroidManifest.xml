@@ -15,6 +15,9 @@
         android:theme="@style/Theme.PhotoEditorPro"
         tools:targetApi="31">
         <activity
+            android:name=".Edit_Panel"
+            android:exported="false" />
+        <activity
             android:name=".Create_Panel"
             android:exported="false" />
         <activity

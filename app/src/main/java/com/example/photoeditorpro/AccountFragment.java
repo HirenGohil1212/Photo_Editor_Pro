@@ -42,7 +42,8 @@ import com.google.firebase.auth.GoogleAuthProvider;
 
 
 public class AccountFragment extends Fragment {
-    int RC_SIGN_IN = 40;
+
+int RC_SIGN_IN = 40;
 private MaterialButton mybtn;
 private FirebaseAuth auth;
 GoogleSignInClient mGoogleSignInClient;
@@ -55,7 +56,6 @@ ImageView imageView;
         super.onCreate(savedInstanceState);
 
         auth = FirebaseAuth.getInstance();
-
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestIdToken(getString(R.string.default_web_client_id)).requestEmail().build();
         mGoogleSignInClient = GoogleSignIn.getClient(requireActivity(),gso);

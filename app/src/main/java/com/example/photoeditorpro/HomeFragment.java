@@ -23,8 +23,7 @@ public class HomeFragment extends Fragment {
 
         TabLayout tabLayout = rootView.findViewById(R.id.tabLayout);
         ViewPager2 viewPager2 = rootView.findViewById(R.id.viewPager);
-        String[] titles = {"Inspiring","Generated","Features"};
-
+        String[] titles = {"Inspiring","Generated With AI","Edit By Masters","Popular Stickers","Trending Replays"};
 
         FragmentStateAdapter MyPagerAdapter = new ViewPagerAdapter(this);
         viewPager2.setAdapter(MyPagerAdapter);
