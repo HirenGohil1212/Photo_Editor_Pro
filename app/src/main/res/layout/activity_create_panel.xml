@@ -6,10 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".Create_Panel">
 
+<!-- Import Photos From Gallery-->
 
 <!--Image Goes Here By Clicking On Gallery and Take Photo-->
-
-    <!--    Scrollable Tab Will Goes Here-->
 
     <ImageView
         android:id="@+id/my_image"
@@ -17,9 +16,12 @@
         android:layout_height="539dp"
         android:background="@color/purple_200"
         android:foregroundGravity="center"
-        android:layout_centerInParent="true">
+        android:layout_centerInParent="true"
+        >
 
-    </ImageView>
+   </ImageView>
+
+    <!--    Scrollable Tab Will Goes Here-->
 
     <ScrollView
         android:id="@+id/scrollable_items"
@@ -40,6 +42,8 @@
             android:text="All Tools Will Here."
             android:textAlignment="center"
             android:textColor="@color/white"
+            android:layout_gravity="center"
+
 
             >
 
