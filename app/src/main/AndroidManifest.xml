@@ -21,9 +21,6 @@
             android:name=".Create_Panel"
             android:exported="false" />
         <activity
-            android:name=".Edit_Panel"
-            android:exported="false" />
-        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
