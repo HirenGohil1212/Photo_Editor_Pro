@@ -35,23 +35,6 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/panel_view"
-
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="8dp">
-
-            <ImageView
-
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="fitXY"
-                android:src="@drawable/demo_grid" />
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
@@ -66,7 +49,6 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
@@ -82,6 +64,20 @@
 
         <androidx.cardview.widget.CardView
 
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/demo_grid" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="8dp"
@@ -96,7 +92,6 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="8dp"
@@ -111,7 +106,6 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="8dp"
