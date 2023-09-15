@@ -16,10 +16,13 @@
 
     <GridLayout
         android:id="@+id/contentType"
-        android:layout_below="@id/mySlider"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_below="@id/mySlider"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:columnCount="3"
         android:rowCount="3">
 
@@ -27,127 +30,127 @@
             android:id="@+id/cardview_1"
             android:layout_width="100dp"
             android:layout_height="60dp"
+            android:layout_margin="8dp"
             app:cardCornerRadius="10dp"
-            app:cardElevation="30dp"
-            android:layout_margin="8dp">
+            app:cardElevation="30dp">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/g1"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:src="@drawable/g1" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Background"
-                android:textAlignment="center"
-                android:fontFamily="@font/poppins"
                 android:layout_marginTop="20dp"
-                />
-
+                android:fontFamily="@font/poppins"
+                android:text="Background"
+                android:textAlignment="center" />
 
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardview_2"
             android:layout_width="100dp"
             android:layout_height="60dp"
+            android:layout_margin="8dp"
             app:cardCornerRadius="10dp"
-            app:cardElevation="30dp"
-            android:layout_margin="8dp">
+            app:cardElevation="30dp">
 
             <ImageView
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/g1"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:src="@drawable/g1" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Templates"
-                android:textAlignment="center"
-                android:fontFamily="@font/poppins"
                 android:layout_marginTop="20dp"
-                />
-
+                android:fontFamily="@font/poppins"
+                android:text="Templates"
+                android:textAlignment="center" />
 
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardview_3"
             android:layout_width="100dp"
             android:layout_height="60dp"
+            android:layout_margin="8dp"
             app:cardCornerRadius="10dp"
-            app:cardElevation="30dp"
-            android:layout_margin="8dp">
+            app:cardElevation="30dp">
 
             <ImageView
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/g1"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:src="@drawable/g1" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Stickers"
-                android:textAlignment="center"
-                android:fontFamily="@font/poppins"
                 android:layout_marginTop="20dp"
-                />
-
+                android:fontFamily="@font/poppins"
+                android:text="Stickers"
+                android:textAlignment="center" />
 
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardview_4"
             android:layout_width="100dp"
             android:layout_height="60dp"
+            android:layout_margin="8dp"
             app:cardCornerRadius="10dp"
-            app:cardElevation="30dp"
-            android:layout_margin="8dp">
+            app:cardElevation="30dp">
 
             <ImageView
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/g1"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:src="@drawable/g1" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Replays"
-                android:textAlignment="center"
-                android:fontFamily="@font/poppins"
                 android:layout_marginTop="20dp"
-                />
-
+                android:fontFamily="@font/poppins"
+                android:text="Replays"
+                android:textAlignment="center" />
 
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardview_5"
             android:layout_width="100dp"
             android:layout_height="60dp"
+            android:layout_margin="8dp"
             app:cardCornerRadius="10dp"
-            app:cardElevation="30dp"
-            android:layout_margin="8dp">
+            app:cardElevation="30dp">
 
             <ImageView
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/g1"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:src="@drawable/g1" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Images"
-                android:textAlignment="center"
-                android:fontFamily="@font/poppins"
                 android:layout_marginTop="20dp"
-                />
+                android:fontFamily="@font/poppins"
+                android:text="Images"
+                android:textAlignment="center" />
 
         </androidx.cardview.widget.CardView>
 
@@ -155,50 +158,50 @@
             android:id="@+id/cardview_6"
             android:layout_width="100dp"
             android:layout_height="60dp"
+            android:layout_margin="8dp"
             app:cardCornerRadius="10dp"
-            app:cardElevation="30dp"
-            android:layout_margin="8dp">
+            app:cardElevation="30dp">
 
 
             <ImageView
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/g1"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:src="@drawable/g1" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Creators"
-                android:textAlignment="center"
-                android:fontFamily="@font/poppins"
                 android:layout_marginTop="20dp"
-                />
+                android:fontFamily="@font/poppins"
+                android:text="Creators"
+                android:textAlignment="center" />
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardview_7"
             android:layout_width="100dp"
             android:layout_height="60dp"
+            android:layout_margin="8dp"
             app:cardCornerRadius="10dp"
-            app:cardElevation="30dp"
-            android:layout_margin="8dp">
+            app:cardElevation="30dp">
 
             <ImageView
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/g1"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:src="@drawable/g1" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hashtags"
-                android:textAlignment="center"
-                android:fontFamily="@font/poppins"
                 android:layout_marginTop="20dp"
-                />
-
+                android:fontFamily="@font/poppins"
+                android:text="Hashtags"
+                android:textAlignment="center" />
 
 
         </androidx.cardview.widget.CardView>
