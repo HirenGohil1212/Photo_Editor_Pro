@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".TrophyFragment">
 
     <TextView
@@ -67,10 +68,67 @@
         android:orientation="vertical">
 
         <!--     This Wil Contains All Challenges.-->
+        
+        <HorizontalScrollView
+        android:id="@+id/horizontalScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            >
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rec_1">
+
+                </ImageView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rec_2">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rec_3">
+
+                </ImageView>
+
+                <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rec_4">
+
+            </ImageView>  <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rec_5">
+
+
+            </ImageView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rec_6">
+
+                </ImageView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
 
     </LinearLayout>
 
     <TextView
+        android:id="@+id/challenge_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/vote_layout"
@@ -85,11 +143,126 @@
 
 <!--    Scroll View Contains Pages Related To Challenge, After Completing DB.-->
 
+<androidx.cardview.widget.CardView
+    android:id="@+id/card1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:layout_below="@id/challenge_text">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/author_panel_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <io.getstream.avatarview.AvatarView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            app:avatarViewBorderWidth="3dp"
+            app:avatarViewIndicatorBorderColor="@color/white"
+            app:avatarViewIndicatorBorderSizeCriteria="10"
+            app:avatarViewIndicatorEnabled="true"
+            android:background="@drawable/splash_icon"
+            app:avatarViewIndicatorPosition="bottomRight"
+            app:avatarViewIndicatorSizeCriteria="9"
+            app:avatarViewInitialsTextStyle="bold"
+            app:avatarViewShape="circle" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hiren Gohil\nAndroid Developer"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/youtube_page"
+        android:layout_below="@id/author_panel_1"
+        >
+
+    </ImageView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/card1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/author_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <io.getstream.avatarview.AvatarView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    app:avatarViewBorderWidth="3dp"
+                    app:avatarViewIndicatorBorderColor="@color/white"
+                    app:avatarViewIndicatorBorderSizeCriteria="10"
+                    app:avatarViewIndicatorEnabled="true"
+                    android:background="@drawable/splash_icon"
+                    app:avatarViewIndicatorPosition="bottomRight"
+                    app:avatarViewIndicatorSizeCriteria="9"
+                    app:avatarViewInitialsTextStyle="bold"
+                    app:avatarViewShape="circle" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hiren Gohil\nAndroid Developer"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/youtube_page"
+                android:layout_below="@id/author_panel"
+                >
+
+            </ImageView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
 
 
 
 
-
-
+<!--<com.google.android.material.imageview.ShapeableImageView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
 
 </RelativeLayout>
